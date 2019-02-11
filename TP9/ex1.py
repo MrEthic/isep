@@ -11,12 +11,12 @@ def createMatrice(matrice, n):
 
 
 def affMatrice(matrice):
-    prt = ""
-    for i in matrice:
-        for j in i:
-            prt += str(j) + "  "
-        prt += "\n"
-    print(prt)
+    prt = ""                        #Initialise un string "vide"
+    for i in matrice:               #Pour chaque ligne i de la matrice
+        for j in i:                 #Pour chaque valeur j de la ligne i
+            prt += str(j) + "  "    #Ajoute la valeur j au string + un espace
+        prt += "\n"                 #A la fin de chaque ligne on reviens a la ligne
+    print(prt)                      #Imprime le sring de la matrice
 
 
 matrice = []
